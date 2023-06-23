@@ -11,26 +11,50 @@ body
 .nav-wrapper
 {
     display: flex;
-    height: 120px;
+    height: 8vw;
     width: 100%;
 }
 
 .knifes-logo
 {
     position: absolute;
-    left: 50%;
     right: 50%;
+    left: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 0;
 }
 
 .knifes-logo img
 {
-    height: 120px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 8vw;
     width: auto;
     opacity: 0.9;
     transition: opacity 0.15s;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .nav-wrapper
+    {
+        height: 8vw;
+    }
+
+    .knifes-logo
+    {
+        padding-right: 60px;
+        right: 0%;
+        justify-content: right;
+        align-items: end;
+    }
+
+    .left-side a
+    {
+        font-size: 3vw;
+    }
 }
 
 .knifes-logo img:hover
@@ -43,6 +67,7 @@ body
     padding-left: 60px;
     display: flex;
     flex-direction: row;
+    font-size: 2em;
 }
 
 .left-side a
@@ -54,7 +79,7 @@ body
     color: rgba(245, 245, 245);
     font-weight: 300;
     text-decoration: none;
-    font-size: 2em;
+    
     opacity: 0.9;
 
     transition: opacity 0.15s;
@@ -67,7 +92,8 @@ body
 .background-vid
 {
     position: relative;
-    height: 570px;
+    height: 37vw;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -111,13 +137,12 @@ body
     padding-bottom: 50px;
     padding-left: 0%;
     padding-right: 0%;
-    padding-top: 150px;
+    padding-top: 80px;
     flex-direction: column;
 }
 
 .goobies-title
 {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,8 +152,8 @@ body
 {
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
-    height: auto;
+    width: auto;
+    height: 22vw;
     opacity: 0.95;
 }
 
